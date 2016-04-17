@@ -1,0 +1,133 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="dtntStyle.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="dtntLogic.js"></script>
+  <script type="text/javascript" src="dtntData.js"></script>
+  <script type="text/javascript" src="dtntPage.js"></script>
+</head>
+<body>
+  <div style="background-color: lightgrey;">
+    <button id="rollit">Roll Dice</button>
+  </div>
+  <div style="background-color: lightgrey;">
+      Kindred:
+      <select id="kin">
+        <option value="HUMAN" selected="selected">Human</option>
+        <option value="GRISTLEGRIM">Dwarf (Gristlegrim)</option>
+        <option value="MIDGARDIAN">Dwarf (Midgardian)</option>
+        <option value="ELF">Elf</option>
+        <option value="FAIRY">Fairy</option>
+        <option value="HOBB">Hobb</option>
+      </select>
+  </div>
+  <div style="background-color: lightgrey;">
+    Class:
+    <select id="classtype">
+      <option value="Fighter" selected="selected">Fighter</option>
+      <option value="Magician">Magician</option>
+      <option value="Rogue">Rogu</option>
+    </select>
+  </div>
+  <div id="dicetarget" style="background-color: lightblue;">
+    <table border="1">
+      <caption>Attributes</caption>
+      <tr>
+        <th></th>
+        <th>Dice Rolls</th>
+        <th>Kindred Modifier</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>STR</td>
+        <td id="STR"></td>
+        <td id="STRm"></td>
+        <td id="STR2"></td>
+      </tr>
+      <tr>
+        <td>CON</td>
+        <td id="CON"></td>
+        <td id="CONm"></td>
+        <td id="CON2"></td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td id="DEX"></td>
+        <td id="DEXm"></td>
+        <td id="DEX2"></td>
+      </tr>
+      <tr>
+        <td>SPD</td>
+        <td id="SPD"></td>
+        <td id="SPDm"></td>
+        <td id="SPD2"></td>
+      </tr>
+      <tr>
+        <td>LK</td>
+        <td id="LK"></td>
+        <td id="LKm"></td>
+        <td id="LK2"></td>
+      </tr>
+      <tr>
+        <td>IQ</td>
+        <td id="IQ"></td>
+        <td id="IQm"></td>
+        <td id="IQ2"></td>
+      </tr>
+      <tr>
+        <td>WIZ</td>
+        <td id="WIZ"></td>
+        <td id="WIZm"></td>
+        <td id="WIZ2"></td>
+      </tr>
+      <tr>
+        <td>CHR</td>
+        <td id="CHR"></td>
+        <td id="CHRm"></td>
+        <td id="CHR2"></td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    Personal Adds: <span id="pa"></span>
+  </div>
+  <div>
+    Level: <span id="lvl"></span>
+  </div>
+  <div>
+    Gold: <span id="gold"></span>
+  </div>
+  <div>
+    Combat Damage: <span id="combatdamage"></span>
+  </div>
+
+<table>
+  <caption>Equipped Weapons</caption>
+  <thead>
+    <tr>
+      <th>Equipped Weapon</th>
+      <th>Total Damage</th>
+    </tr>
+  </thead>
+  <tbody id="equippedweapons">
+  </tbody>
+</table>
+</table>
+ <table>
+   <caption>Store Weapons</caption>
+   <thead>
+     <tr>
+       <th>Weapon</th>
+       <th>Damage</th>
+       <th>STR required</th>
+       <th>DEX required</th>
+       <th>Cost</th>
+       <th>Weight</th>
+       <th>Hands</th>
+     </tr>
+   </thead>
+   <tbody id="storeweapons">
+   </tbody>
+ </table>
+</body>
+</html>
